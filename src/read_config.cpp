@@ -46,7 +46,17 @@ void read_config()
                 }
                 case 7:
                 {
-                    config>>threads;
+                    config>>con_tol;
+                    break;
+                }
+                case 8:
+                {
+                    config>>pf;
+                    break;
+                }
+                case 9:
+                {
+                    config>>alpha;
                     break;
                 }
                 default :
@@ -55,12 +65,12 @@ void read_config()
                 }
             }
         }
-        if(count>20)
+        if(count>10)
             break;
     }
     config.close();
     cout<<"Optimizer Configured"<<endl;
-    cout<<"Problem"<<"\t"<<"Method"<<"\t"<<"Pop"<<"\t"<<"Max itr"<<"\t"<<"Runs"<<"\t"<<"Dim"<<"\t"<<endl;
-    cout<<prob<<"\t"<<method<<"\t"<<N<<"\t"<<itr<<"\t"<<rmax<<"\t"<<D<<"\t"<<endl;
+    cout<<"Problem"<<"\t"<<"Method"<<"\t"<<"Pop"<<"\t"<<"Max itr"<<"\t"<<"Runs"<<endl;
+    cout<<prob<<"\t"<<method<<"\t"<<N<<"\t"<<itr<<"\t"<<rmax<<endl;
     //cout<<"OpenMP using "<<no_of_threads<<" threads"<<endl;
 }

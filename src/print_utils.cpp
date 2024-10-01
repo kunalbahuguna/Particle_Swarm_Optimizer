@@ -2,15 +2,15 @@
 void print(Particle par)
 {
     cout<<"Position-> ";
-    print(par.pos,D);
+    print(par.pos);
     cout<<"Current Fitness="<<par.fitness<<" Current Function Value="<<par.fval<<"\n";
     cout<<"Best Position-> ";
-    print(par.pbest_pos,D);
+    print(par.pbest_pos);
     cout<<"Personal Best Fitness="<<par.pbest_fitness<<"\n";
     cout<<"Velocity-> ";
-    print(par.vel,D);
+    print(par.vel);
     cout<<"Voilation Vector->";
-    print(par.voilation,N_iec+N_ec);
+    print(par.voilation);
     cout<<"Is feasible->";
     print(par.is_feasible);
     cout<<"XXXXXXXXXXXXXX\n";
@@ -29,17 +29,17 @@ void print(int a[],int n)
         cout<<a[i]<<" ";
     cout<<"\n";
 }
-void print(vector <double> &a,int n)
+void print(vector <double> a)
 {
     int i;
-    for(i=0;i<n;i++)
+    for(i=0;i<a.size();i++)
         cout<<a[i]<<" ";
-    cout<<"\n";
+    //cout<<"\n";
 }
-void print(vector <int> &a,int n)
+void print(vector <int> a)
 {
     int i;
-    for(i=0;i<n;i++)
+    for(i=0;i<a.size();i++)
         cout<<a[i]<<" ";
     cout<<"\n";
 }
