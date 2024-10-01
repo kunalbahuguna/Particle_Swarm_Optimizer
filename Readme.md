@@ -68,8 +68,10 @@ More details can be found in the [wiki page](https://en.wikipedia.org/wiki/Test_
    ```cpp
    vector<double> example_problem(vector<double> X)
 This function receives the position vector X and returns a vector with the objective function value, inequality constraints, and equality constraints (in this order).
+
 2. Add the initialization in the initialize.cpp file for the problem by defining the dimensions (D), number of equality constraints (N_ec), and number of inequality constraints (N_iec).
 3. Define the function pointer as:
    ```cpp
    tc_func = example_problem;
+
 4. Lastly, add the function definition in the .h file.
