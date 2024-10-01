@@ -59,6 +59,7 @@ Define the following parameters in the `config.txt` file:
 21. Rosen-Suzuki Problem
 22. Cattle Feed Problem
 23. Transformer Design Problem
+
 Optimim and optimum position are written in opti_values.txt file.
 More details can be found in the [wiki page](https://en.wikipedia.org/wiki/Test_functions_for_optimization) on test problems for optimization and the book [Test Examples for Nonlinear Programming Codes](https://link.springer.com/book/10.1007/978-3-642-48320-2) by Willi Hock and Klaus Schittkowski.
 
@@ -66,7 +67,7 @@ More details can be found in the [wiki page](https://en.wikipedia.org/wiki/Test_
 1. Add a function in `test_cases.cpp`:
    ```cpp
    vector<double> example_problem(vector<double> X)
-   This function receives the position vector X and returns a vector with the objective function value, inequality constraints, and equality constraints (in this order).
+This function receives the position vector X and returns a vector with the objective function value, inequality constraints, and equality constraints (in this order).
 2. Add the initialization in the initialize.cpp file for the problem by defining the dimensions (D), number of equality constraints (N_ec), and number of inequality constraints (N_iec).
 3. Define the function pointer as:
    ```cpp
